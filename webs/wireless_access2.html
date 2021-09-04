@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link href="css/reasy-ui.css" rel="stylesheet"> -->
+    <title></title>
+  <script src="lang/b28n_async.js"></script>
+<script>
+B.setTextDomain(["translate"]);
+</script>
+</head>
+  <body>
+    <fieldset>
+    	<div class="legend-main">
+            <div class="control-group">
+            	<label class="control-label">无线访问控制模式：</label>
+                <div class="controls">
+                	<div>
+                        <label class="radio"><input type="radio" name="macFilterType" value="black">Blacklist<span>&nbsp;</span><span class="help-tips">（禁止列表中的设备连接）</span>
+                        </label>
+                    </div>
+                    <div>
+                    <label class="radio"><input type="radio" name="macFilterType" value="white">Whitelist<span>&nbsp;</span><span class="help-tips">（只允许列表中的设备连接）</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow-x:hidden;overflow-y: auto;height: 310px;">
+                <table class="table table-fixed small-table" id="whiteListTable">
+                    <thead>
+                        <tr>
+                            <th style="width:60%">MAC Address</th>
+                            <th style="width:40%">Operation</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="text input-medium mac" maxlength="17"></td>
+                            <td><input type="button" class="btn btn-action" id="addWhiteMac" value="+New"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table class="table table-fixed small-table" id="blackListTable">
+                    <thead>
+                        <tr>
+
+                            <th style="width:60%">MAC Address</th>
+                            <th style="width:40%">Operation</th>
+                        </tr>
+                        <tr>
+
+                            <td><input type="text" class="text input-medium mac" maxlength="17"></td>
+                            <td><input type="button" class="btn btn-action" id="addBlackMac" value="+New"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="control-group">
+                <div class="red page-err" id="msg-err">&nbsp;</div>
+            </div>
+
+            <div class="btn-group">
+            	<input type="button" class="btn btn-normal" id="submit" value="Save">
+            </div>
+        </div>
+    </fieldset>
+
+    <script src="js/libs/j.js"></script>
+    <script src="js/libs/reasy-ui-1.0.3.js"></script>
+    <script src="js/libs/public.js"></script>
+    <script src="js/wireless_access2.js"></script>
+</body></html>

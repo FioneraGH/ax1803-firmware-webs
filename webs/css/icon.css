@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'iconmoon';
+  src:  url('../fonts/iconmoon.eot?wpiq3f');
+  src:  url('../fonts/iconmoon.eot?wpiq3f#iefix') format('embedded-opentype'),
+    url('../fonts/iconmoon.ttf?wpiq3f') format('truetype'),
+    url('../fonts/iconmoon.woff?wpiq3f') format('woff'),
+    url('../fonts/iconmoon.svg?wpiq3f#iconmoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="r-icon-"], [class*=" r-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconmoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.r-icon-icn_mesh:before {
+  content: "\e900";
+}
+.r-icon-ofdma:before {
+  content: "\e901";
+}
+.r-icon-firewall:before {
+  content: "\e902";
+}
+.r-icon-ddns:before {
+  content: "\e903";
+}
+.r-icon-dmz:before {
+  content: "\e904";
+}
+.r-icon-iptv:before {
+  content: "\e905";
+}
+.r-icon-led:before {
+  content: "\e906";
+}
+.r-icon-macfilter:before {
+  content: "\e907";
+}
+.r-icon-bandwidth:before {
+  content: "\e908";
+}
+.r-icon-power:before {
+  content: "\e909";
+}
+.r-icon-static-route:before {
+  content: "\e90a";
+}
+.r-icon-tr069:before {
+  content: "\e90b";
+}
+.r-icon-upnp:before {
+  content: "\e90c";
+}
+.r-icon-virtual-server:before {
+  content: "\e90d";
+}
+.r-icon-warnnig:before {
+  content: "\e90e";
+}
+.r-icon-backup:before {
+  content: "\e90f";
+}
+.r-icon-advanced:before {
+  content: "\e910";
+}
+.r-icon-username:before {
+  content: "\e911";
+}
+.r-icon-ipv6:before {
+  content: "\e912";
+}
+.r-icon-internet:before {
+  content: "\e913";
+}
+.r-icon-parent-control:before {
+  content: "\e914";
+}
+.r-icon-system-manage:before {
+  content: "\e915";
+}
+.r-icon-usb:before {
+  content: "\e916";
+}
+.r-icon-autofixed:before {
+  content: "\e917";
+}
+.r-icon-vpn:before {
+  content: "\e918";
+}
+.r-icon-wifi-setting:before {
+  content: "\e919";
+}
+.r-icon-lan:before {
+  content: "\e91a";
+}
+.r-icon-round:before {
+  content: "\e91b";
+}
+.r-icon-log:before {
+  content: "\e91c";
+}
+.r-icon-ok:before {
+  content: "\e91d";
+}
+.r-icon-restart:before {
+  content: "\e91e";
+}
+.r-icon-static-ip:before {
+  content: "\e91f";
+}
+.r-icon-system-status:before {
+  content: "\e920";
+}
+.r-icon-time:before {
+  content: "\e921";
+}
+.r-icon-upgrade:before {
+  content: "\e922";
+}
+.r-icon-wan-parameter:before {
+  content: "\e923";
+}
+.r-icon-web-manage:before {
+  content: "\e924";
+}
+.r-icon-dlna:before {
+  content: "\e925";
+}
+.r-icon-file-share:before {
+  content: "\e926";
+}
+.r-icon-printer:before {
+  content: "\e927";
+}
+.r-icon-vpn-client:before {
+  content: "\e928";
+}
+.r-icon-vpn-online:before {
+  content: "\e929";
+}
+.r-icon-pptp-server:before {
+  content: "\e92a";
+}
+.r-icon-anti-interference:before {
+  content: "\e92b";
+}
+.r-icon-wifi-power:before {
+  content: "\e92c";
+}
+.r-icon-ap:before {
+  content: "\e92d";
+}
+.r-icon-beamforming:before {
+  content: "\e92e";
+}
+.r-icon-channel:before {
+  content: "\e92f";
+}
+.r-icon-wifi:before {
+  content: "\e930";
+}
+.r-icon-wifi-time:before {
+  content: "\e931";
+}
+.r-icon-wifi-repeater:before {
+  content: "\e932";
+}
+.r-icon-wps:before {
+  content: "\e933";
+}
+.r-icon-guest:before {
+  content: "\e934";
+}
+.r-icon-app:before {
+  content: "\e935";
+}
+.r-icon-internet-setting:before {
+  content: "\e936";
+}
+.r-icon-signal:before {
+  content: "\e937";
+}
+.r-icon-code:before {
+  content: "\e938";
+}
+.r-icon-devices:before {
+  content: "\e939";
+}
+.r-icon-user:before {
+  content: "\e93a";
+}
+.r-icon-logo_nav:before {
+  content: "\e93b";
+}
+.r-icon-help:before {
+  content: "\e93c";
+}
+.r-icon-e-link:before {
+  content: "\e93d";
+}
+.r-icon-wifi-control:before {
+  content: "\e93e";
+}
+.r-icon-guest2:before {
+  content: "\e93f";
+}

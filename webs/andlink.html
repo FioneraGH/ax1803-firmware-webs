@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link href="css/reasy-ui.css" rel="stylesheet"> -->
+    <title></title>
+  <script src="lang/b28n_async.js"></script>
+<script>
+B.setTextDomain(["translate"]);
+</script>
+</head>
+  <body>
+        <fieldset class="ifmwrap-time">
+        	<div class="legend-main" style="margin-top: 40px;">
+            	<div id="wifi_set_wrap">
+                    <div id="wifi_set">
+                        <div class="control-group">
+                            <label class="control-label">AndLink:</label>
+                            <div class="controls">
+                                <div id="andlinkEn" class="btn-off"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="red page-err" id="msg-err"></div>
+                    </div>
+
+                    <div class="control-group btn-group">
+                        <input type="button" class="btn btn-normal" id="andlink-save" value="Save">
+                    </div>
+                    <p class="txt-center text-warning none" id="timeUpTip">The schedule takes effect only if the system time is synchronized with the internet time.</p>
+                    <div class="txt-help-tips txt-center">After andlink is closed, the route cannot be accessed through hejiaqin app</div>
+            	</div>
+             </div>
+        </fieldset>
+        <script src="js/libs/j.js"></script>
+        <script src="js/libs/public.js"></script>
+        <script src="js/andlink.js"></script>
+</body>
+</html>

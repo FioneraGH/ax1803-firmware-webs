@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link href="css/reasy-ui.css" rel="stylesheet"> -->
+    <title></title>
+    <style type="text/css" media="screen">
+        select {
+            width: 228px !important;
+        }
+    </style>
+    <script src="js/macro_config.js"></script>
+  <script src="lang/b28n_async.js"></script>
+<script>
+B.setTextDomain(["translate"]);
+</script>
+</head>
+  <body>
+        <fieldset class="ifmwrap-dhcp">
+            <div class="legend-main">
+            <form id="wrl-form">
+                <fieldset>
+                    <div class="control-group" id="24g_btn">
+                        <label class="control-label" style="font-weight:bold;">2.4G访客网络<span class="hide-white">:</span></label>
+                        <div class="controls">
+                            <div name="guestEn" class="btn-off" id="guestEn"></div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">WiFi Name:</label>
+                        <div class="controls">
+                            <input type="text" id="guestSsid" name="guestSsid" maxlength="32" class="validatebox input-large" required="required" data-options="{&quot;type&quot;:&quot;ssid&quot;}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Encryption Mode:</label>
+                        <div class="controls">
+                            <select id="guestSecurity">
+                                <option value="none">None</option>
+                                <option value="wpapsk">WPA-PSK</option>
+                                <option value="wpa2psk">WPA2-PSK</option>
+                                <option value="wpawpa2psk">WPA/WPA2-PSK</option>
+                                <option value="wpa3sae">WPA3-SAE</option>
+                                <option value="wpa3saewpa2psk">WPA3-SAE/WPA2-PSK</option>
+                            </select><br />
+                            <span class="help-tips" id="securityTip"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">WiFi Password:</label>
+                        <div class="controls">
+                            <input type="password" id="guestWrlPwd" name="guestWrlPwd" class="validatebox input-large" maxlength="63" data-options="{&quot;type&quot;:&quot;ssidPwd&quot;,&quot;args&quot;:[8,63]}">
+                        </div>
+                    </div>
+                </fieldset>
+            	<br>
+                <fieldset id="5g_fieldset">
+                    <div class="control-group">
+                        <label class="control-label" style="font-weight:bold;">5G访客网络<span class="hide-white">:</span></label>
+                        <div class="controls">
+                            <div name="guestEn_5g" class="btn-off" id="guestEn_5g"></div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">WiFi Name:</label>
+                        <div class="controls">
+                            <input type="text" id="guestSsid_5g" name="guestSsid_5g" maxlength="32" class="validatebox input-large" required="required" data-options="{&quot;type&quot;:&quot;ssid&quot;}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Encryption Mode:</label>
+                        <div class="controls">
+                            <select id="guestSecurity_5g">
+                                <option value="none">None</option>
+                                <option value="wpapsk">WPA-PSK</option>
+                                <option value="wpa2psk">WPA2-PSK</option>
+                                <option value="wpawpa2psk">WPA/WPA2-PSK</option>
+                                <option value="wpa3sae">WPA3-SAE</option>
+                                <option value="wpa3saewpa2psk">WPA3-SAE/WPA2-PSK</option>
+                            </select><br />
+                            <span class="help-tips" id="securityTip_5g"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">WiFi Password:</label>
+                        <div class="controls">
+                            <input type="password" id="guestWrlPwd_5g" name="guestWrlPwd_5g" class="validatebox input-large" maxlength="63" data-options="{&quot;type&quot;:&quot;ssidPwd&quot;,&quot;args&quot;:[8,63]}">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="control-group">
+                    <div class="red page-err" id="wrl_save_msg">&nbsp;</div>
+                </div>
+            </form>
+            <div class="btn-group">
+            	<input type="button" id="save" class="btn btn-normal" value="Save">
+            </div>
+        </div>
+    </fieldset>
+
+    <script src="js/libs/j.js"></script>
+    <script src="js/libs/reasy-ui-1.0.3.js"></script>
+    <script src="js/libs/public.js"></script>
+    <script src="js/wifi_guest.js"></script>
+</body></html>

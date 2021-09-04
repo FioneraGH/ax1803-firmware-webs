@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!-- OEMTAG -->
+  <title>Tenda Web Master</title>
+  <meta name="description" content="login" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Le styles -->
+  <!-- <link href="css/reasy-ui.css" rel="stylesheet"> -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <script src="js/macro_config.js"></script>
+  <script src="lang/b28n_async.js"></script>
+  <script>
+    B.setTextDomain(["translate"]);
+  </script>
+  <style>
+    .container {
+      width: 800px;
+      height: 600px;
+      background: #fff;
+      border-radius: 2px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -400px;
+      margin-top: -300px;
+    }
+    .input-group {
+      width: 300px;
+      margin-top: 80px;
+    }
+    .text-center {
+      text-align: center;
+      padding-top: 68px;
+    }
+    .form-title {
+      font-size: 16px;
+      color: #262626;
+      line-height: 24px;
+      text-align: left;
+    }
+    .form-tips {
+      font-size: 14px;
+      color: #999;
+      line-height: 24px;
+      text-align: left;
+      margin-top: 6px;
+    }
+    .select-group {
+      text-align: left;
+      margin-top: 16px;
+      margin-bottom: 48px;
+    }
+    .success-msg {
+      color: #58bf14;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    .help-tips {
+      line-height: 22px;
+      font-size: 12px;
+    }
+    .green-button{
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .green-button span{
+      margin-left: 5px;
+    }
+    .txt-help-tips{
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body class="login-body">
+<div class="container">
+  <div class="text-center">
+    <img src="img/main-logo.png" height="35" />
+    <div class="input-group">
+      <div class="form-title">请选择省份名称及省份代码</div>
+      <div class="select-group">
+        <select style="width: 300px" id="ProvinceCode" onchange="changeProvinceCode()">
+          <option value="BEJ">北京,BEJ</option>
+          <option value="TAJ">天津,TAJ</option>
+          <option value="SHH">上海,SHH</option>
+          <option value="CHQ">重庆,CHQ</option>
+          <option value="HEB">河北,HEB</option>
+          <option value="SHX">山西,SHX</option>
+          <option value="SHA">陕西,SHA</option>
+          <option value="LIA">辽宁,LIA</option>
+          <option value="JIL">吉林,JIL</option>
+          <option value="HLJ">黑龙江,HLJ</option>
+          <option value="JSU">江苏,JSU</option>
+          <option value="ZHJ">浙江,ZHJ</option>
+          <option value="HUN">湖南,HUN</option>
+          <option value="HUB">湖北,HUB</option>
+          <option value="GUD">广东,GUD</option>
+          <option value="HAI">海南,HAI</option>
+          <option value="SCH">四川,SCH</option>
+          <option value="GUI">贵州,GUI</option>
+          <option value="YUN">云南,YUN</option>
+          <option value="GAN">甘肃,GAN</option>
+          <option value="QIH">青海,QIH</option>
+          <option value="TAI">台湾,TAI</option>
+          <option value="ANH">安徽,ANH</option>
+          <option value="FUJ">福建,FUJ</option>
+          <option value="JXI">江西,JXI</option>
+          <option value="SHD">山东,SHD</option>
+          <option value="HEN">河南,HEN</option>
+          <option value="HKG">香港,HKG</option>
+          <option value="TIB">西藏,TIB</option>
+          <option value="NMG">内蒙古,NMG</option>
+          <option value="GXI">广西,GXI</option>
+          <option value="NXA">宁夏,NXA</option>
+          <option value="XIN">新疆,XIN</option>
+          <option value="MAC">澳门,MAC</option>
+          <option value="TY">通用,TY</option>
+        </select>
+        <div class="help-tips">当前选择的省份名称及省份代码：<span id="tips"></span></div>
+        <div class="form-tips">公网IP：<span id="ip"></span></div>
+        <div class="form-tips">运营商：<span id="isp"></span></div>
+      </div>
+      <div class="green-button">
+        Green Internet access:
+        <span id="greenNetEn" class="btn-off"></span>
+      </div>
+      <div class="txt-help-tips">绿色上网关闭后，将无法通过智慧家庭微信小程序管控路由器</div>
+      <input
+              type="button"
+              id="subBtn"
+              onclick="submitData()"
+              class="btn login-btn"
+              value="保存"
+              style="width: 236px"
+      />
+    </div>
+    <div id="err-msg" class="success-msg">&nbsp;</div>
+  </div>
+</div>
+
+<script src="js/libs/j.js"></script>
+
+<script src="js/libs/reasy-ui-1.0.3.js"></script>
+<script src="js/libs/public.js"></script>
+<script>
+  var initProvinceCode;
+  var G = {
+    domain: "router.ctc"
+  };
+  function changeProvinceCode() {
+    var ProvinceCode = $("#ProvinceCode").val();
+    if (ProvinceCode) {
+      $("#tips").html($("#ProvinceCode").find("option:selected").html());
+    }
+  }
+  function submitData() {
+    $("#subBtn").blur();
+    //切换
+    var rebootFlag = initProvinceCode != $("#ProvinceCode").val();
+    $.GetSetData.setData("/goform/SetProvinceCode", "ProvinceCode=" + $("#ProvinceCode").val(), function (data) {
+      data = $.parseJSON(data);
+      if (data.errCode == "0") {
+        if(rebootFlag) {
+          $("#subBtn").hide();
+          $.progress.showPro("reboot");
+        } else {
+          showErrMsg("err-msg", "设置成功");
+        }
+      }
+    });
+    $.GetSetData.setData("/goform/SetGreenNet", "greenNetEn=" + $("#greenNetEn").val(), function (data) {
+    });
+  }
+  function initEvent() {
+    $("#greenNetEn").on("click", function () {
+      if ($(this).hasClass("btn-on")) {
+        $(this).attr("class", "btn-off");
+        $(this).val('0');
+      } else {
+        $(this).attr("class", "btn-on");
+        $(this).val('1');
+      }
+    });
+  }
+
+  window.onload = function () {
+    initEvent();
+    $.GetSetData.getJson("goform/GetProvinceCode", function (data) {
+      initProvinceCode = data.ProvinceCode;
+      $("#ip").html(data.ip);
+      $("#isp").html(data.isp);
+      $("#ProvinceCode").val(data.ProvinceCode);
+      changeProvinceCode();
+    });
+    $.GetSetData.getJson("/goform/GetGreenNet", function (obj) {
+      $("#greenNetEn").attr("class", (obj.greenNetEn === "1") ? "btn-on" : "btn-off");
+      obj.greenNetEn === "1" ? $('#greenNetEn').val('1') : $('#greenNetEn').val('0');
+    });
+  };
+</script>
+</body>
+</html>

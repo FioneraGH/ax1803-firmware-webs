@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <link href="css/reasy-ui.css" rel="stylesheet"> -->
+    <title></title>
+  <script src="lang/b28n_async.js"></script>
+<script>
+B.setTextDomain(["translate"]);
+</script>
+</head>
+  <body>
+        <fieldset class="ifmwrap-dmz">
+            <div class="legend-main" style="margin-top: 60px;">
+                <div class="control-group" style="margin-bottom:40px;">
+                    <label class="control-label">MESH组网：</label>
+                    <div class="controls">
+                        <div id="meshEn" class="btn-off"></div>
+                    </div>
+                </div>
+                <div class="control-group none" style="margin-bottom:40px;" id="roleCfg">
+                  <label class="control-label">角色选择：</label>
+                  <div class="controls" style="height:30px;">
+                      <label class="radio" for="autoRole" style="display:none;" id="autoRoleShow">
+                          <input type="radio" name="meshRole" id="autoRole" value="0">自动</label>
+                    <label class="radio" for="mainRole">
+                        <input type="radio" name="meshRole" id="mainRole" value="1">主节点</label>
+                    <label class="radio" for="secoRole">
+                        <input type="radio" name="meshRole" id="secoRole" value="2">子节点</label>
+                </div>
+              </div>
+                <div class="container" style="width:500px;">
+                <div style="float:left;height: 84px;">
+                  <img src="./img/img_mesh.png" width="120">
+                </div>
+                <div style="margin-left: 140px; margin-top:41px;">
+                  <div style="color: #999;line-height:24px;">
+                    主节点：连接互联网（一般连接到光猫、DSL猫、有线电视猫或宽带网口），作为MESH网络的出口。
+                </div>
+                <div style="color: #999; line-height: 24px;">
+                    子节点：通过WiFi或网线连接主节点，扩展WiFi覆盖。
+                </div>
+                </div>
+                </div>
+                <div id="waitingTip" class="txt-center none text-warning"></div>
+                <div class="btn-group" style="margin-top: 30px;">
+                	<input type="button" class="btn btn-normal" id="submit" value="Save">
+                </div>
+              </div>
+        </fieldset>
+
+  <script src="js/libs/j.js"></script>
+  <script src="js/libs/public.js"></script>
+  <script src="js/libs/reasy-ui-1.0.3.js"></script>
+  <script src="js/wifi_meshSwitch.js"></script>
+  <script src="js/macro_config.js"></script>
+</body></html>
