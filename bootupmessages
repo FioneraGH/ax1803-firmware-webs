@@ -1,0 +1,472 @@
+<6>       0000000083038000  00000000d081c000  00001000
+<6>       0000000083040000  00000000d081e000  00001000
+<6>       0000000083050000  00000000d0834000  00001000
+<6>       0000000083058000  00000000d0836000  00001000
+<6>       0000000083048000  00000000d0838000  00001000
+<6>       00000000810a0000  00000000d083a000  00001000
+<6>       0000000081060000  00000000d083c000  00003000
+<6>       00000000ffff0000  00000000d0866000  00001000
+<6>       0000000083000000  00000000d0868000  00001000
+<6>       000000008306c000  00000000d086a000  00001000
+<6>       0000000080400000  00000000d08e0000  00013000
+<6>       0000000080500000  00000000d0900000  00013000
+<6>       0000000081100000  00000000d0f00000  00091000
+<6>Calibrating delay loop (skipped), value calculated using timer frequency.. 100.00 BogoMIPS (lpj=50000)
+<6>pid_max: default: 32768 minimum: 301
+<6>Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>--Kernel Config--
+<6>  SMP=1
+<6>  PREEMPT=1
+<6>  DEBUG_SPINLOCK=0
+<6>  DEBUG_MUTEXES=0
+<6>CPU: Testing write buffer coherency: ok
+<6>Setting up static identity map for 0x182c0 - 0x182f4
+<6>     Reserved memory mapping...
+<6>                phys          virt       size
+<4>CCI hardware cache coherency enabled
+<4>Successfully retrieved NVRAM data from dtb
+<4>cfe-v: 1.0.38-163.231
+<6>Brought up 4 CPUs
+<6>SMP: Total of 4 processors activated (400.00 BogoMIPS).
+<6>CPU: All CPU(s) started in SVC mode.
+<6>devtmpfs: initialized
+<6>VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+<6>clocksource jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+<6>futex hash table entries: 1024 (order: 4, 65536 bytes)
+<6>NET: Registered protocol family 16
+<6>DMA: preallocated 256 KiB pool for atomic coherent allocations
+<6>cpuidle: using governor ladder
+<6>cpuidle: using governor menu
+<6>Serial: AMBA PL011 UART driver
+<6>ff812000.serial: ttyAMA0 at MMIO 0xff812000 (irq = 63, base_baud = 0) is a PL011 rev3
+<6>console [ttyAMA0] enabled
+<6>bootconsole [earlycon0] disabled
+<4>Broadcom Logger v0.1
+<5>SCSI subsystem initialized
+<6>usbcore: registered new interface driver usbfs
+<6>usbcore: registered new interface driver hub
+<6>usbcore: registered new device driver usb
+<6>bcmhs_spi bcmhs_spi.1: master is unqueued, this is deprecated
+<4>Create led poll
+<4>skb_free_task created successfully with start budget 128
+<4>[0;34mBLOG v3.0 Initialized[0m
+<4>BLOG Rule v1.0 Initialized
+<4>Broadcom IQoS v1.0 initialized
+<4>Broadcom GBPM v0.1 initialized
+<6>Switched to clocksource arch_sys_counter
+<6>NET: Registered protocol family 2
+<6>default registered
+<6>default registered
+<6>MPTCP: Stable release v0.91
+<6>TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+<6>TCP bind hash table entries: 2048 (order: 2, 16384 bytes)
+<6>TCP: Hash tables configured (established 2048 bind 2048)
+<6>UDP hash table entries: 256 (order: 1, 8192 bytes)
+<6>UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+<6>NET: Registered protocol family 1
+<6>RPC: Registered named UNIX socket transport module.
+<6>RPC: Registered udp transport module.
+<6>RPC: Registered tcp transport module.
+<6>RPC: Registered tcp NFSv4.1 backchannel transport module.
+<7>PCI: CLS 0 bytes, default 64
+<6>squashfs: version 4.0 (2009/01/31) Phillip Lougher
+<6>jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+<6>fuse init (API version 7.23)
+<6>io scheduler noop registered (default)
+<6>brd: module loaded
+<6>loop: module loaded
+<4>SPI NAND Device Linux Registration
+<4>SPI NAND Linux Registration
+<4>SPI NAND device reset
+<4>SPI NAND device ESMT F50L1G41LB
+<4>   device id    = 0xc817f7f
+<4>   ecc          = 1/1 bits
+<4>   page size    = 0x800 (2048) bytes
+<4>   block size   = 0x20000 (131072) bytes
+<4>   total blocks = 0x400 (1024)
+<4>   total size   = 0x8000000 (134217728) bytes
+<6>nand: device found, Manufacturer ID: 0x00, Chip ID: 0x00
+<6>nand: Unknown ; set by driver
+<6>nand: 128 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 64
+<4>>>>>> For primary mtd partition rootfs, cferam/vmlinux.lz UBI volume, vmlinux fs mounted as UBIFS <<<<<
+<4>Secondary mtd partition rootfs_update detected as UBI for cferam/vmlinux source and UBIFS for vmlinux filesystem
+<5>Creating 10 MTD partitions on "ESMT F50L1G41LB":
+<5>0x000000100000-0x000003000000 : "rootfs"
+<5>0x000003000000-0x000005f00000 : "rootfs_update"
+<5>0x000007700000-0x000007f00000 : "data"
+<5>0x000000000000-0x000000100000 : "nvram"
+<5>0x000000100000-0x000003000000 : "image"
+<5>0x000003000000-0x000005f00000 : "image_update"
+<5>0x000000000000-0x000008000000 : "dummy1"
+<5>0x000000000000-0x000008000000 : "dummy2"
+<5>0x000006700000-0x000007700000 : "misc2"
+<5>0x000005f00000-0x000006700000 : "misc1"
+<6>tun: Universal TUN/TAP device driver, 1.6
+<6>tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>PPP generic driver version 2.4.2
+<6>PPP BSD Compression module registered
+<6>PPP Deflate Compression module registered
+<6>NET: Registered protocol family 24
+<6>i2c /dev entries driver
+<6>bcm96xxx-wdt ff800480.watchdog: Broadcom BCM96xxx watchdog timer
+<6>sdhci: Secure Digital Host Controller Interface driver
+<6>sdhci: Copyright(c) Pierre Ossman
+<6>sdhci-pltfm: SDHCI platform and OF driver helper
+<6>sdhci-bcm63xx ff810000.sdhci: No vmmc regulator found
+<6>sdhci-bcm63xx ff810000.sdhci: No vqmmc regulator found
+<6>mmc0: SDHCI controller on ff810000.sdhci [ff810000.sdhci] using ADMA
+<1>brcmboard registered
+<4>brcmboard: brcm_board_init entry
+<4>print_rst_status: Last RESET due to Unknown
+<4>print_rst_status: RESET reason: 0x00000000
+<4>DYING GASP IRQ Initialized and Enabled
+<4>SES: LED GPIO 0x8024 is enabled
+<4>map_hw_timer_interrupt,130: interrupt_id 22
+<4>map_hw_timer_interrupt,130: interrupt_id 23
+<4>map_hw_timer_interrupt,130: interrupt_id 24
+<4>map_hw_timer_interrupt,130: interrupt_id 25
+<4>Allocated EXT_TIMER number 3
+<4>Broadcom Timer Initialized
+<4>Registering button 0 (c087250c) (bpGpio: 00008004, bpExtIrq:00002001 (2001))
+<4>    extIrqIdx:1, gpioNum:4 ACTIVE LOW
+<4>  Button 0: Registering press hook btnHook_Ses after 0 ms 
+<4>ERROR: parameter mismatch for PB_BUTTON_1 (0)
+<4>Registering button 1 (c0872580) (bpGpio: 00008009, bpExtIrq:00002000 (2000))
+<4>    extIrqIdx:0, gpioNum:9 ACTIVE LOW
+<4>  Button 1: Registering hold hook btnHook_RestoreToDefault after 6000 ms 
+<4>(NULL device *): Led 36 renamed to 36_1 due to name collision
+<4>(NULL device *): Led 36 renamed to 36_2 due to name collision(NULL device *): Led 3 renamed to 3_1 due to name collision
+<6>i2c-bcm63000 ff802100.i2c: Broadcom BCM96xxx I2C driver
+<4>bcm_i2c: registered i2c mux on bus 0: client = cfb8c600 using addr 0x70
+<4>bcm_i2c: No port/bus number define i2c interface 1!!!
+<4>bcm_i2c: No port/bus number define i2c interface 2!!!
+<4>bcm_i2c: No port/bus number define i2c interface 3!!!
+<4>bcm_i2c: No port/bus number define i2c interface 4!!!
+<4>bcm_i2c: No port/bus number define i2c interface 5!!!
+<4>bcm_i2c: No port/bus number define i2c interface 6!!!
+<4>bcm_i2c: No port/bus number define i2c interface 7!!!
+<4>bcm_i2c: No port/bus number define i2c interface 8!!!
+<6>
+<6>Optical detection module loaded.
+<4>BPM: tot_mem_size=268435456B (256MB), buf_mem_size <15%> =40265310B (38MB), num of buffers=15345, buf size=2624
+<4>Broadcom BPM Module Char Driver v0.1 Registered<304>[0m
+<4>init procfs
+<6>GACT probability NOT on
+<6>Mirror/redirect action on
+<6>u32 classifier
+<6>    input device check on
+<6>    Actions configured
+<6>xt_time: kernel timezone is -0000
+<6>Initializing XFRM netlink socket
+<6>NET: Registered protocol family 10
+<6>ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>sit: IPv6 over IPv4 tunneling driver
+<6>ip6_gre: GRE over IPv6 tunneling driver
+<6>fullmesh registered
+<6>NET: Registered protocol family 17
+<6>NET: Registered protocol family 15
+<6>bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+<5>Bridge firewalling registered
+<6>Ebtables v2.0 registered
+<6>ebt_time registered
+<6>ebt_blog registered
+<6>ebt_ftos registered
+<6>ebt_wmm_mark registered
+<6>ebt_qos_map registered
+<6>L2TP core: blog_l2tp_rcv_check 
+<6>l2tp_core: L2TP core driver, V2.0
+<6>l2tp_ppp: PPPoL2TP kernel driver, V2.0
+<6>8021q: 802.1Q VLAN Support v1.8
+<5>Registering SWP/SWPB emulation handler
+<5>ubi0: attaching mtd0
+<5>ubi0: scanning is finished
+<5>ubi0: attached mtd0 (name "rootfs", size 47 MiB)
+<5>ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+<5>ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+<5>ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+<5>ubi0: good PEBs: 376, bad PEBs: 0, corrupted PEBs: 0
+<5>ubi0: user volume: 4, internal volumes: 1, max. volumes count: 128
+<5>ubi0: max/mean erase counter: 2/0, WL threshold: 4096, image sequence number: 1982769265
+<5>ubi0: available PEBs: 0, total reserved PEBs: 376, PEBs reserved for bad PEB handling: 8
+<5>ubi0: background thread "ubi_bgt0d" started, PID 407
+<5>UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "rootfs_ubifs", R/O mode
+<5>UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+<5>UBIFS (ubi0:0): FS size: 40886272 bytes (38 MiB, 322 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+<5>UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+<5>UBIFS (ubi0:0): media format: w4/r0 (latest is w4/r0), UUID 51F8ED0D-F2BF-4D8F-B51D-16DEDFE7CB51, small LPT model
+<6>VFS: Mounted root (ubifs filesystem) readonly on device 0:12.
+<6>devtmpfs: mounted
+<6>Freeing unused kernel memory: 208K
+<5>ubi1: attaching mtd2
+<5>ubi1: scanning is finished
+<5>ubi1: attached mtd2 (name "data", size 8 MiB)
+<5>ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+<5>ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+<5>ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+<5>ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+<5>ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+<5>ubi1: max/mean erase counter: 26/16, WL threshold: 4096, image sequence number: 2781117626
+<5>ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+<5>ubi1: background thread "ubi_bgt1d" started, PID 506
+<5>UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 541
+<5>UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "data"
+<5>UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+<5>UBIFS (ubi1:0): FS size: 5840896 bytes (5 MiB, 46 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+<5>UBIFS (ubi1:0): reserved for root: 275879 bytes (269 KiB)
+<5>UBIFS (ubi1:0): media format: w4/r0 (latest is w4/r0), UUID 7836C166-49DF-4926-B7A4-6B73AF461C4E, small LPT model
+<5>ubi2: attaching mtd8
+<5>ubi2: scanning is finished
+<5>ubi2: attached mtd8 (name "misc2", size 16 MiB)
+<5>ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+<5>ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+<5>ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+<5>ubi2: good PEBs: 128, bad PEBs: 0, corrupted PEBs: 0
+<5>ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+<5>ubi2: max/mean erase counter: 9/4, WL threshold: 4096, image sequence number: 2390440749
+<5>ubi2: available PEBs: 0, total reserved PEBs: 128, PEBs reserved for bad PEB handling: 4
+<5>ubi2: background thread "ubi_bgt2d" started, PID 552
+<5>UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 584
+<5>UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "misc2"
+<5>UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+<5>UBIFS (ubi2:0): FS size: 13967360 bytes (13 MiB, 110 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+<5>UBIFS (ubi2:0): reserved for root: 659712 bytes (644 KiB)
+<5>UBIFS (ubi2:0): media format: w4/r0 (latest is w4/r0), UUID 59A4E570-DDA2-46CD-A2D4-4A8E8C30BFF3, small LPT model
+<4>wlcsm: module license 'Proprietary' taints kernel.
+<4>Disabling lock debugging due to kernel taint
+<6>Initializing WLCSM Module
+<6>WLCSM Module loaded successfully 
+<4>BCMLIBS loaded...
+<6>Broadcom 802.1Q VLAN Interface, v0.1
+<4>brcmchipinfo: brcm_chipinfo_init entry
+<4>Broadcom Ingress QoS Module  Char Driver v1.0 Registered<303>[0m
+<4>
+<4>Broadcom Ingress QoS v1.0 initialized
+<4>[0;36;44mBroadcom Packet Flow Cache [0m
+<4>FCACHE_CONFIG_MAX_FLOW_ENTRIES<16384>
+<4>FCACHE_CONFIG_MAX_FDB_ENTRIES<1024>
+<4>FCACHE_CONFIG_MAX_HOST_DEV_ENTRIES<64>
+<4>FCACHE_CONFIG_MAX_HOST_MAC_ENTRIES<32>
+<4>npe_max_entries<32768>
+<4>Bind blog_notify_evt_enqueue_fn[<bf08aa44>]
+<4>fc_evt task created successfully
+<4>max_ent = 16384 intvl_msec = 10000 num_slices = 2000 num_ent = 9 period_msec = 5 
+<4>NBUFF v1.0 Initialized
+<4>[0;36;44mTotal # of labels = 69[0m
+<4>[0;36;44mInitialized fcache state[0m
+<4>	Pkt HW acceleration is disabled/unavailable.
+<4>[0;36;44mBroadcom Packet Flow Cache  Char Driver v4.0 Registered<302>[0m
+<4>fc_timer_task created successfully
+<4>	Pkt HW acceleration is disabled/unavailable.
+<4>Created Proc FS /procfs/fcache
+<4>[0;36;44mBroadcom Packet Flow Cache registered with netdev chain[0m
+<4>[0;36;44mBroadcom Packet Flow Cache learning via BLOG enabled.[0m
+<4>[0;35m[FHW]  pktDbgLvl[0xbf0a1944]=0[0m
+<4>[0;34m[FHW]  fhw_construct: [0m
+<4>[0;36;44mInitialized Fcache HW accelerator layer state[0m
+<4>flwStatsThread created. numFlwsPerPoll 546 maxFlwIdx 16383
+<4>[0;36;44mFcache Pathstats created[0m
+<4>[0;36;44mConstructed Broadcom Packet Flow Cache v4.0[0m
+<4>Broadcom Command List Driver v1.0
+<4>[0;36;44mBroadcom Archer Packet Accelerator Intializing[0m
+<4>Open archer Netdevice
+<4>Archer DS DPI Initialized
+<4>Archer US DPI Initialized
+<4>Archer WLAN Interface Construct (Threshold 64 packets, Timeout 866201 nsec, Jiffies 18)
+<4>Archer WLAN Rx Thread Initialized
+<4>Sysport 0 WOL IRQ 53
+<4>Sysport 1 WOL IRQ 59
+<4>SYSPORT Driver Constructed (Budget: 128, Coalescing: 826828 nsec)
+<4>Archer Mode set to L2+L3
+<4>Archer Mode set to L3
+<4>Initialized Archer Host Layer
+<4>Flow Table (256, 64): ca800000, 4194304 bytes
+<4>Flow Info Table (44, 65536): ca400000, 2883584 bytes
+<4>Command List Table (128): virt 0xca000000, phys 0x0a000000, size 2097152 bytes
+<4>Command List Control Table (8): cafc0000, 131072 bytes
+<4>Sysport Classifier: Maximum 16384 flows
+<4>Archer IQ status changed from 0 to 1
+<4>[0;34m[NTC bitpool] idx_pool_init: 551:FHW[0]:Create Index Pool_Size = 16384[0m
+<4>Retrieve num_fhw_path=64
+<4>[0;36;44mPathstats allocated 2048 bytes[0m
+<4>[0;36;44mBroadcom Packet Flow Cache HW acceleration enabled.[0m
+<4>Enabled Archer binding to Flow Cache
+<4>[0;36;44mBroadcom Archer Network Processor Char Driver v0.1 Registered <339>[0m
+<4>Archer TCP Pure ACK Enabled
+<4>crossbar Mux: connect cb_idx:0  int_ep 0 to ext_ep 2
+<4>crossbar Mux: connect cb_idx:0  int_ep 1 to ext_ep -1
+<4>getrcal for res select 5, int 660, ext 642, ratio 124 ratio1 144, rcal 9
+<4>Setting SGMII Calibration value to 0x9
+<4>    PLL_PON(8051): 0x0250; TX_PON(8067): 0x0048; RX_PON(80b2): 0x0980
+<4>SYSPORT Host Binding Successfull
+<4>eth0: Down <50:2B:73:B7:69:28> <IntSw P0, Logical 00> PHY_ID <0x0007f008:0x08: On-chip 1G GPHY> Cfg: ANG.1G; Down 
+<4>eth1: Down <50:2B:73:B7:69:28> <IntSw P1, Logical 01> PHY_ID <0x06100006:0x06: On-chip 2.5G 2_EXTSW> Cfg: FIX.2.5G; Down 
+<4>SYSPORT[0] = SWITCH_NONE
+<4>SYSPORT[1] = SWITCH_NONE
+<4>logical_port 0, intf_index 0, phys_port 0 -> port_index 0
+<4>logical_port 1, intf_index 1, phys_port 0 -> port_index 0
+<4>RXQ[0]: IRQ 48, CPU 3
+<4>CSB Initialized: 0xcaf77000 (0xcaf77000), size 64 (128)
+<4>Archer DMA Layer Initialized
+<4>Sysport Recycle Task: IRQ 49, CPU 3
+<4>RXQ[0]: IRQ 54, CPU 3
+<4>CSB Initialized: 0xcade6000 (0xcade6000), size 64 (128)
+<4>Archer DMA Layer Initialized
+<4>Sysport Recycle Task: IRQ 55, CPU 3
+<4>sysport_queue 0 -> switch_queue 0
+<4>sysport_queue 1 -> switch_queue 1
+<4>sysport_queue 2 -> switch_queue 2
+<4>sysport_queue 3 -> switch_queue 3
+<4>sysport_queue 4 -> switch_queue 4
+<4>sysport_queue 5 -> switch_queue 5
+<4>sysport_queue 6 -> switch_queue 6
+<4>sysport_queue 7 -> switch_queue 7
+<4>sysport_queue 0 -> switch_queue 0
+<4>sysport_queue 1 -> switch_queue 1
+<4>sysport_queue 2 -> switch_queue 2
+<4>sysport_queue 3 -> switch_queue 3
+<4>sysport_queue 4 -> switch_queue 4
+<4>sysport_queue 5 -> switch_queue 5
+<4>sysport_queue 6 -> switch_queue 6
+<4>sysport_queue 7 -> switch_queue 7
+<4>dgasp: kerSysRegisterDyingGaspHandler: bcmsw registered 
+<3>bcm_enet_init:L2427 ENET system contructed and configured enet-kthrd thread
+<3>enet_kthread_handler:L306 Instantiating ENET thread
+<4>RTK Switch API init
+<4>Switch API version:  chip id: 0x6367-00a0
+<4>vportmask:3001f vportmask:1f
+<4>RTK83XX proc create
+<4>RTK_switch init suceed
+<4>PCIe HCD (impl1)
+<4>  bcm963xx-pcie: found core [1] vcore [0] 
+<4>  bcm963xx-pcie: [0] DT node available: /pcie@85000000
+<4>  bcm963xx-pcie: vcore [0] initialized with [2] devices
+<6>pcie-vcore 85000000.pcie: PCI host bridge to bus 0000:01
+<6>pci_bus 0000:01: root bus resource [mem 0x85000000-0x85ffffff]
+<2>eth1 (Int switch port: 1) (Logical Port: 1) (phyId: 6) Link Up at 2500 mbps full duplex
+<6>pci_bus 0000:01: root bus resource [mem 0x86000000-0x86ffffff]
+<7>pci 0000:01:00.0: [14e4:f6ca] type 00 class 0x028000
+<7>pci 0000:01:00.0: reg 0x10: [mem 0x85000000-0x85ffffff 64bit]
+<7>pci 0000:01:00.0: supports D1 D2
+<7>pci 0000:01:01.0: [14e4:f6ca] type 00 class 0x028000
+<7>pci 0000:01:01.0: reg 0x10: [mem 0x86000000-0x86ffffff 64bit]
+<7>pci 0000:01:01.0: supports D1 D2
+<6>PCI: bus1: Fast back to back transfers disabled
+<6>pci 0000:01:00.0: BAR 0: assigned [mem 0x85000000-0x85ffffff 64bit]
+<6>pci 0000:01:01.0: BAR 0: assigned [mem 0x86000000-0x86ffffff 64bit]
+<4>  bcm963xx-pcie: [0] DT node available: /pcie@80040000
+<4>  bcm963xx-pcie: found port [0] GEN2 Core Rev [3.23] with 2 Lanes
+<4>getrcal for res select 5, int 660, ext 642, ratio 124 ratio1 144, rcal 9
+<4>  bcm963xx-pcie: Core [0] setting resistor calibration value to 0x9
+<4>  bcm963xx-pcie: core [0] link is DOWN
+<4>  bcm963xx-pcie: core [0] powered down
+<6>ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>ehci-platform: EHCI generic platform driver
+<6>ehci-pci: EHCI PCI platform driver
+<6>ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<6>ohci-platform: OHCI generic platform driver
+<6>ohci-pci: OHCI PCI platform driver
+<4>++++ Powering up USB blocks
+<6>xhci-hcd xhci-hcd.0: xHCI Host Controller
+<6>xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 1
+<6>xhci-hcd xhci-hcd.0: hcc params 0x0250f17d hci version 0x100 quirks 0x00010010
+<6>xhci-hcd xhci-hcd.0: irq 47, io mem 0x8000d000
+<6>hub 1-0:1.0: USB hub found
+<3>hub 1-0:1.0: config failed, hub doesn't have any ports! (err -19)
+<6>xhci-hcd xhci-hcd.0: xHCI Host Controller
+<6>xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 2
+<6>hub 2-0:1.0: USB hub found
+<6>hub 2-0:1.0: 1 port detected
+<6>ehci-platform ehci-platform.0: EHCI Host Controller
+<6>ehci-platform ehci-platform.0: new USB bus registered, assigned bus number 3
+<6>ehci-platform ehci-platform.0: irq 46, io mem 0x8000c300
+<6>ehci-platform ehci-platform.0: USB 2.0 started, EHCI 1.00
+<6>hub 3-0:1.0: USB hub found
+<6>hub 3-0:1.0: 1 port detected
+<6>ohci-platform ohci-platform.0: Generic Platform OHCI controller
+<6>ohci-platform ohci-platform.0: new USB bus registered, assigned bus number 4
+<6>ohci-platform ohci-platform.0: irq 45, io mem 0x8000c400
+<6>hub 4-0:1.0: USB hub found
+<6>hub 4-0:1.0: 1 port detected
+<6>ehci-platform ehci-platform.1: EHCI Host Controller
+<6>ehci-platform ehci-platform.1: new USB bus registered, assigned bus number 5
+<6>ehci-platform ehci-platform.1: irq 46, io mem 0x8000c500
+<6>ehci-platform ehci-platform.1: USB 2.0 started, EHCI 1.00
+<6>hub 5-0:1.0: USB hub found
+<6>hub 5-0:1.0: 1 port detected
+<6>ohci-platform ohci-platform.1: Generic Platform OHCI controller
+<6>ohci-platform ohci-platform.1: new USB bus registered, assigned bus number 6
+<6>ohci-platform ohci-platform.1: irq 45, io mem 0x8000c600
+<6>hub 6-0:1.0: USB hub found
+<6>hub 6-0:1.0: 1 port detected
+<6>usbcore: registered new interface driver usblp
+<6>usbcore: registered new interface driver usb-storage
+<6>usbcore: registered new interface driver uas
+<2>broadcomThermalDrv brcm-therm: init (CPU count 4 4 4 4)
+<4>brcm_otp_init entry
+<6>cfg80211: Calling CRDA to update world regulatory domain
+<4>Loading HND Module
+<4>igs_module_init:867:	 IGS 29 create network socket successful
+<4>wl_module_init: passivemode set to 0x1
+<4>wl_module_init: txworkq set to 0x0
+<4>[0;32mwl_pktfwd_sys_init:  [1m[34mWL_PKTFWD[1.0.0][0m Success[0m
+<4>Tedna--->init:wl_module_init,2235
+<6>wl 0000:01:00.0: enabling device (0140 -> 0142)
+<6>wl0: creating kthread wl0-kthrd
+<4>si_doattach: using BAR0 value: enum_base=85000000
+<4>wl0: phy_radio_attach: RF Band Cap: 2G:1 5G:1
+<4>kerSysGetWifiLed(0) returned 17
+<4>wl0_awl attach successful tx: 1, rx: 2
+<4>[0;34mArcher WLAN Bind: wl%d, wl_radio_idx 0, radio_index 0, mode SKB[0m
+<4>[0;32mwl_wfd_bind: wl0 wfd_idx 0 success[0m
+<4>wl0: Broadcom BCM63178 802.11 Wireless Controller 17.10.99.17 (r780087 WLTEST)
+<6>wl 0000:01:01.0: enabling device (0140 -> 0142)
+<6>wl1: creating kthread wl1-kthrd
+<4>si_doattach: using BAR0 value: enum_base=86000000
+<4>wl1: phy_radio_attach: RF Band Cap: 2G:1 5G:1
+<4>kerSysGetWifiLed(1) returned 18
+<4>wl1_awl attach successful tx: 1, rx: 2
+<4>[0;34mArcher WLAN Bind: wl%d, wl_radio_idx 1, radio_index 1, mode SKB[0m
+<4>[0;32mwl_wfd_bind: wl1 wfd_idx 1 success[0m
+<4>wl1: Broadcom BCM63178 802.11 Wireless Controller 17.10.99.17 (r780087 WLTEST)
+<4>TENDA WLAN: init proc 
+<4>--- STA STEERING INIT ---
+<4>LINUX_VERSION_CODE===262452
+<4>s_wifi_netlink_init+++++(3.14.0)
+<4>s_wifi_netlink_init----
+<6>gre: GRE over IPv4 demultiplexor driver
+<6>ip_gre: GRE over IPv4 tunneling driver
+<6>Netfilter messages via NETLINK v0.30.
+<6>ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>nf_conntrack version 0.5.0 (3907 buckets, 15628 max)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_exp_gre (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_inbound (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_outbound (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_expectfn (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_exp_gre (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_inbound (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_outbound (err 0)
+<4>nf_nat_pptp: Unknown symbol nf_nat_pptp_hook_expectfn (err 0)
+<4>kmbase: loading out-of-tree module taints kernel.
+<4>km_online_ip proc file created
+<4>km_online_ip filter proc file created
+<4>km_record_agent_online_ip_en filter proc file created
+<4>km_ctf_init 322: ctf_register_hook failed, maybe fastnat not insmod
+<4>km_ctf_init 322: ctf_register_hook failed, maybe fastnat not insmod
+<4>__km_wan_wanid_rule_debug_init 482 wanid_rule_debug init success
+<4>km_init 463: ##km base init success##
+<6>[BM CORE     ][bm_init         ,1016]  INFO: bm_init success
+<4>bm_ctf_register_hook 904: ctf_register_hook failed, maybe fastnat not insmod
+<4>bm_ctf_register_hook 904: ctf_register_hook failed, maybe fastnat not insmod
+<6>[BM CORE     ][bm_u2k_info_init,1219]  INFO: bm_u2k_info_init success
+<6>[MAC GROUP   ][bm_mac_group_init,443 ]  INFO: bm_u2k_info_init success
+<6>[MAC FILTER  ][mf_init         ,638 ]  INFO: bm_mac_filter init success 
+<4>Kernel:Init attack fence dev success.
+<4>the ddos ip attack defnence init successful
+<6>[URL FILTER  ][uf_init         ,2848]  INFO: url filter init success
+<4>nos_debug_init_proc 390 nos_debug init success!!!
+<4>dns_redirect_bridge_hook_init 1011: ctf_register_hook failed, maybe fastnat not insmod
+<4>dns_redirect_bridge_hook_init 1011: ctf_register_hook failed, maybe fastnat not insmod
+<4> dns redirect module load successful
+<4>Autodiscover kernel netlink_init.
+<5>random: dropbearconvert urandom read with 7 bits of entropy available
